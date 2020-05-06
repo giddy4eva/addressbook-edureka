@@ -1,0 +1,9 @@
+pipeline{
+    agent any
+    stages{
+        stage("Git checkout"){
+            steps{
+                git 'https://github.com/ijazm123/addressbook-edureka.git'
+            }
+        }
+    }
